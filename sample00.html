@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex" />
+
+    <title>HTML例文集</title>
+    <meta name="author" content="谷川 靖郎">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+    <!-- FontAwesomeを使う -->
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="plugin/highlight/zenburn.css" id="highlight-theme">
+
+  </head>
+
+  <body>
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+
+        <section>
+          <h1>タイトル</h1>
+          <hr />
+          <ul style="list-style:none">
+            <li>氏名：河童さん</li>
+            <li>所属：小樽運河</li>
+            <li>学籍番号：0000000</li>
+          </ul>
+        </section>
+
+        <section>
+          <p>hoge</p>
+        </section>
+
+        <section>
+          <p>hoge</p>
+        </section>
+
+        <section>
+          <h3>ご清聴ありがとうございました</h3>
+        </section>
+
+        <section>
+          <h3><i class="fas fa-book" style="color:#990000"></i> 参考文献，参考サイト</h3>
+          <hr />
+          <ul>
+            <li><a href="https://github.com/hakimel/reveal.js/" target="_blanc">Reveal.js</a></li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/search/search.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+
+     // Also available as an ES module, see:
+     // https://revealjs.com/initialization/
+     Reveal.initialize({
+       controls: true,
+       progress: true,
+       center: true,
+       hash: true,
+       transition: 'convex',
+       // Learn about plugins: https://revealjs.com/plugins/
+       plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+     });
+    </script>
+  </body>
