@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+
+    <title>HTML例文集</title>
+    <meta name="robots" content="noindex">
+    <meta name="author" content="yatra-tatra">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+    <!-- FontAwesomeを使う -->
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="plugin/highlight/zenburn.css" id="highlight-theme">
+
+  </head>
+
+  <body>
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+
+        <section>
+          <h1 data-split="letters">タイトルなんだよ</h1>
+          <hr />
+          <ul style="list-style:none">
+            <li>氏名：河童さん</li>
+            <li>所属：小樽運河</li>
+            <li>学籍番号：0000000</li>
+          </ul>
+        </section>
+
+        <section>
+          <section>
+            <h2>見出しと本文の書き方</h2>
+          </section>
+
+          <section>
+            <h3>見出しには h1～h6 のタグ</h3>
+            <hr />
+            <p>文章は p のタグで段落を作ります</p>
+            <p>標準では中央揃えになります</p>
+            <p>こんな風に</p>
+          </section>
+
+          <section style="text-align: left">
+            <h3>左寄せのページ</h3>
+            <hr />
+            <p>文章は p のタグで段落を作ります</p>
+            <p>sectionタグの書き方により，左寄せにできます</p>
+            <p>こんな風に</p>
+          </section>
+
+          <section style="text-align: right">
+            <h3>右寄せのページ</h3>
+            <hr />
+            <p>文章は p のタグで段落を作ります</p>
+            <p>sectionタグの書き方により，右寄せにできます</p>
+            <p>こんな風に</p>
+          </section>
+
+          <section>
+            <h3>本文だけ左寄せのページ</h3>
+            <hr />
+            <div style="text-align: left">
+              <p>文章は p のタグで段落を作ります</p>
+              <p>divタグの書き方により，左寄せにできます</p>
+              <p>こんな風に</p>
+            </div>
+          </section>
+
+          <section>
+            <h3>本文だけ右寄せのページ</h3>
+            <hr />
+            <div  style="text-align: right">
+              <p>文章は p のタグで段落を作ります</p>
+              <p>divタグの書き方により，右寄せにできます</p>
+              <p>こんな風に</p>
+            </div>
+          </section>
+
+          <section>
+            <h3>要するに，いろいろできます</h3>
+            <hr />
+            <div style="text-align: left">
+              <p>部分的に左寄せにできます</p>
+              <p>ここは左寄せの部分</p>
+            </div>
+            <div  style="text-align: right">
+              <p>部分的に右寄せにできます</p>
+              <p>ここは右寄せの部分</p>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>箇条書きの書き方</h2>
+          </section>
+
+          <section>
+            <h3>普通の箇条書き</h3>
+            <hr />
+            <ul>
+              <li>一番目の項目</li>
+              <li>二番目の項目</li>
+              <li>三番目の項目</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>番号付き箇条書き</h3>
+            <hr />
+            <ol>
+              <li>一番目の項目</li>
+              <li>二番目の項目</li>
+              <li>三番目の項目</li>
+            </ol>
+          </section>
+
+          <section>
+            <h3>順番に現れる箇条書き</h3>
+            <hr />
+            <ul>
+              <li class="fragment">順番に</li>
+              <li class="fragment">現れる</li>
+              <li class="fragment">Reval.jsに特有の仕掛け</li>
+            </ul>
+            <p class="fragment">➡ こんな感じです</p>
+            <p class="fragment">※スライドらしい表現になります</p>
+          </section>
+
+          <section>
+            <h3>順番に現れる箇条書き（別の書き方）</h3>
+            <hr />
+            <ul>
+              <li><span class="fragment">順番に</span></li>
+              <li><span class="fragment">現れる</span></li>
+              <li><span class="fragment">Reval.jsに特有の仕掛け</span></li>
+            </ul>
+            <p class="fragment">➡ こんな感じです</p>
+            <p class="fragment">※スライドらしい表現になります</p>
+          </section>
+          <section>
+            <h3>参考</h3>
+            <hr />
+            <ul>
+              <li><a href="https://saruwakakun.com/html-css/basic/ul-ol-li#section3" target="_blanc">【HTMLで箇条書き】ul・ol・liタグの使い方まとめ</a></li>
+              <li><a href="https://saruwakakun.com/html-css/reference/ul-ol-li-design" target="_blanc">コピペで使えるリストデザイン34選：CSSで箇条書きをおしゃれに</a></li>
+              <li><a href="https://www.yuu-diaryblog.com/2017/03/14/list-design/" target="_blanc">CSSで作るリストデザイン38選！オシャレな箇条書きを実現</a></li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>順番に出る<span class="fragment">仕掛け</span>について</h2>
+              <hr />
+              <p class="fragment">段落ごと現れるようにできます</p>
+              <p><span class="fragment">細切れに</span><span class="fragment">現れるようにも</span><span class="fragment">できます</span></p>
+              <span class="fragment"><img src="https://3.bp.blogspot.com/-rvJeRsecCXg/WUdZMxvbzZI/AAAAAAABFDs/ehK3rojOMZklPUMh6OA4b-H9ZXX60AvMwCLcBGAs/s800/pop_gazouha_image_desu.png" width="40%" /><br />画像もね</span>
+          </section>
+
+          <section>
+            <h2>変化する仕掛け</h2>
+            <p>demo.htmlより</p>
+            <hr />
+            <p class="fragment grow">大きくなる</p>
+            <p class="fragment shrink">小さくなる</p>
+            <p class="fragment fade-out">消える</p>
+            <p>
+              <span style="display: inline-block;" class="fragment fade-right">左から，</span>
+              <span style="display: inline-block;" class="fragment fade-up">下から，</span>
+              <span style="display: inline-block;" class="fragment fade-down">上から，</span>
+              <span style="display: inline-block;" class="fragment fade-left">右から入る</span>
+            </p>
+            <p class="fragment fade-in-then-out">現れて消える</p>
+            <p class="fragment fade-in-then-semi-out">現れて消え…ない</p>
+            <p><span class="fragment highlight-red">赤で，</span><span class="fragment highlight-blue">青で，</span><span class="fragment highlight-green">緑で</span>強調</p>
+        </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>表の書き方，色の付け方</h2>
+          </section>
+
+          <section>
+            <h3>表の書き方</h3>
+            <hr />
+            <div font-size="xx-small">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="left">ヤマガラ</td>
+                    <td class="left">チチツー，チチツー，チチ</td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="left">シジュウカラ</td>
+                    <td class="left">チチチュチチチュチチチュ</td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="left">カワラヒワ</td>
+                    <td class="left">ピピピピピ，ジュイーン</td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="left">ヒヨドリ</td>
+                    <td class="left">ヒーヨ，ヒーヨ</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section>
+            <h3>色の付け方</h3>
+            <hr />
+            <p><span style="color:#663333">色</span>の色々な付け方</p>
+            <p><span style="color:#6666ff">色々</span>な色の付け方</p>
+            <p><span style="color:#339933">色々色</span>のの付け方</p>
+            <p><span style="color:#9933ff">色々色々</span>の…</p>
+          </section>
+        </section>
+
+        <section>
+          <h3>リンクの張り方</h3>
+          <hr />
+          <ul>
+            <li><a href="https://www.google.com/" target="_blanc">Google検索</a>へのリンク</li>
+            <li>マーティン・リース編／佐藤勝彦監修『<a href="https://www.amazon.co.jp/%E5%AE%87%E5%AE%99%E5%A4%A7%E5%9B%B3%E9%91%91-%E3%83%8D%E3%82%B3%E3%83%BB%E3%83%91%E3%83%96%E3%83%AA%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0DK%E3%83%96%E3%83%83%E3%82%AF%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA-%E4%BD%90%E8%97%A4%E5%8B%9D%E5%BD%A6/dp/4777053687/ref=sr_1_1/356-7305128-0177045?ie=UTF8&qid=1505480587&sr=8-1&keywords=%E5%AE%87%E5%AE%99%E5%A4%A7%E5%9B%B3%E9%91%91" target="_blanc">宇宙大図鑑</a>』ネコ・パブリッシングDKブックシリーズ, 2014.9</li>
+          </ul>
+        </section>
+
+        <section>
+          <section>
+            <h2>色々貼ってみる</h2>
+          </section>
+
+          <section>
+            <h3>画像<span style="color:red">の</span>貼り方</h3>
+            <img src="https://pixnio.com/free-images/2018/11/21/2018-11-21-13-48-10-1200x801.jpg" width="30%" />
+            <img src="https://pixnio.com/free-images/2018/11/21/2018-11-21-13-48-10-1200x801.jpg" width="30%" />
+          </section>
+
+          <section>
+            <img src="https://pixnio.com/free-images/2018/11/21/2018-11-21-13-48-10-1200x801.jpg" width="30%" style="float:left" />
+            <p>文章に画像を入れる場合</p>
+            <p>文章に画像を入れる場合</p>
+            <p>文章に画像を入れる場合</p>
+            <p>やり方は何通りかあります</p>
+          </section>
+
+          <section>
+            <h3>YouTube動画の貼り方</h3>
+            <hr />
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XMolEvB5EqA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </section>
+
+          <section>
+            <h3>Google Mapの貼り方</h3>
+            <hr />
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4047271.6167475223!2d78.45557251641418!3d7.8516989948106595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593cf65a1e9d%3A0xe13da4b400e2d38c!2z44K544Oq44Op44Oz44Kr!5e0!3m2!1sja!2sjp!4v1661347672408!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </section>
+
+          <section>
+            <h3>googleスプレッドシートのグラフ</h3>
+            <p>データは架空のものです</p>
+            <hr />
+            <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSTvutAGZuvpl94fhmYA6mFpEVfuRIoxwc1HfDEfz7h2eBPG9SNZHctZBuHk0fP_fPYPA8S4HQd8VKx/pubchart?oid=1649999533&amp;format=interactive"></iframe>
+          </section>
+
+          <section>
+            <h3>オーディオファイルの貼り方</h3>
+            <hr />
+            <p>
+              <audio controls>
+                <source src="../audio/1216_132711.WAV" />ここは何も書かないで良い。
+              </audio>
+            </p>
+          </section>
+
+          <section>
+            <h3>アイコンフォントの貼り方</h3>
+            <hr />
+            <p>
+              <i class="fas fa-pencil-alt" style="color:#000066"></i>
+              <i class="fas fa-folder-open" style="color:#006600"></i>
+              <i class="fas fa-book" style="color:#660000"></i>
+              <i class="fas fa-university" style="color:#666600"></i>
+              <i class="fas fa-heart faa-pulse animated" style="color:#ff0000"></i>
+              <i class="fas fa-file-alt" style="color:#999933"></i>
+              <i class="fas fa-arrow-down animated" style="color:#990000"></i>
+            </p>
+            <p>ネットにつながっていないと表示されません</p>
+            <p><a href="https://fontawesome.com/versions" target="_blanc">Font Awesome 5を使用</a></p>
+          </section>
+
+          <section>
+            <h3>Unicode絵文字</h3>
+            <hr />
+            <p>😀😺👫🐈🐕</p>
+            <p>環境によって見え方が違います</p>
+          </section>
+        </section>
+
+        <section>
+          <h3>ご清聴ありがとうございました</h3>
+        </section>
+
+        <section>
+          <h3><i class="fas fa-book" style="color:#990000"></i> 参考文献，参考サイト</h3>
+          <hr />
+          <ul>
+            <li><a href="https://github.com/hakimel/reveal.js/" target="_blanc">Reveal.js</a></li>
+            <li><a href="https://github.com/rajgoel/reveal.js-plugins" target="_blanc">rajgoel / reveal.js-plugins</a></li>
+            <li><a href="https://saruwakakun.com/html-css/basic" target="_blanc">サルワカ：HTML&CSS入門 Webデザインをイチから学ぼう</a></li>
+            <li><a href="http://www.tohoho-web.com/www.htm" target="_blanc">とほほのHTML入門</a></li>
+            <li><a href="https://saruwakakun.com/html-css/basic/font-awesome" target="_blanc">【保存版】Font Awesomeの使い方：Webアイコンフォントを使おう</a></li>
+            <li><a href="https://fontawesome.com/versions" target="_blanc">Versions of Font Awesome</a></li>
+            <li><a href="https://unicode.org/emoji/charts/full-emoji-list.html" target="_blanc">Unicode絵文字</a> </li>
+          </ul>
+        </section>
+
+        <section>
+          <section>
+            <br /><br />
+            <h2>テーマの自作</h2>
+            <hr />
+            <h2><i class="fas fa-flip-vertical" style="color:#554433">テーマの自作</i></h2>
+          </section>
+
+          <section>
+            <h3>CSSファイルを変更する</h3>
+            <hr />
+            <p>dist/theme/hoge.css</p>
+            <p>↓</p>
+            <p>色の設定などをいじる</p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <br /><br />
+            <h2>背景色で遊ぶ</h2>
+            <hr />
+            <h2><i class="fas fa-flip-vertical" style="color:#554433">背景色で遊ぶ</i></h2>
+          </section>
+
+          <section data-background="#993333">
+            <h3>背景色の変更</h3>
+            <hr />
+            <ul>
+              <li>sectionタグに細工する：<code>&lt;section data-background="#993333"&gt;</code></li>
+              <li>属性で色を指定している</li>
+            </ul>
+          </section>
+
+          <section data-background="#333399" data-background-transition="zoom">
+            <h3>背景色の変更 + 動き</h3>
+            <hr />
+            <ul>
+              <li>さらに細工を加える：<code>&lt;section data-background="#993333" data-background-transition="zoom"&gt;</code></li>
+              <li>属性で色と動きを指定している</li>
+            </ul>
+          </section>
+
+          <section data-background="linear-gradient(#009999, #000033)">
+            <h3>グラデーション背景</h3>
+            <hr />
+            <ul>
+              <li>CSSの場合：<code>background: linear-gradient(#009999, #000033)</code></li>
+              <li>sectionタグの場合：<code>&lt;section data-background="linear-gradient(#009999, #000033)"&gt;</code></li>
+            </ul>
+          </section>
+
+          <section data-background="radial-gradient(#999900, #003300)">
+            <h3>円形グラデーション</h3>
+            <hr />
+            <ul>
+              <li>CSSの場合：<code>background: radial-gradient(#999900, #003300)</code></li>
+              <li>sectionタグの場合：<code>&lt;section data-background="radial-gradient(#999900, #003300)"&gt;</code></li>
+            </ul>
+          </section>
+
+          <section>
+            <i class="fas fa-pencil-alt" style="color:#999900"></i> 参考：<a href="https://www.webcreatorbox.com/tech/css-gradient">webクリエイターボックス</a>
+          </section>
+
+        </section>
+
+        <section>
+          <section>
+            <br /><br />
+            <h2>背景画像で遊ぶ</h2>
+            <hr />
+            <h2><i class="fas fa-flip-vertical" style="color:#554433">背景画像で遊ぶ</i></h2>
+          </section>
+          <section data-background="https://upload.wikimedia.org/wikipedia/commons/a/ae/AfricanWildCat.jpg">
+            <h3>背景画像の設定</h3>
+            <hr />
+            <ul>
+              <li>sectionタグに細工する：<br /><code>&lt;section data-background="画像のパス・URL"&gt;</code></li>
+              <li>属性で画像ファイルを指定している</li>
+            </ul>
+          </section>
+
+          <section data-background="https://upload.wikimedia.org/wikipedia/commons/a/ae/AfricanWildCat.jpg" data-background-size="contain">
+            <h2>背景画像の調整</h2>
+            <hr />
+            <ul>
+              <li>sectionタグに細工する：<br /><code>&lt;section data-background="画像のパス・URL" data-background-size="contain"&gt;</code></li>
+              <li>大きさの調整を加えている</li>
+            </ul>
+          </section>
+
+          <section data-background="https://upload.wikimedia.org/wikipedia/commons/a/ae/AfricanWildCat.jpg" data-background-opacity="0.5">
+            <h2>背景画像に透明度を設定</h2>
+            <hr />
+            <ul>
+              <li>さらに属性を追加：<br /><code>&lt;section data-background="画像のパス・URL" data-background-opacity="0.5"&gt;</code></li>
+              <li>属性で透明度の指定を加えている</li>
+            </p>
+          </section>
+        </section>
+
+        <section data-background-iframe="https://www.city.sapporo.jp/" data-background-interactive data-background-opacity="0.5">
+          <h2>背景webページ</h2>
+          <hr />
+          <ul>
+            <li>sectionタグに細工する：<br /><code>&lt;section data-background-iframe="webサイトのURL" data-background-interactive&gt;</code></li>
+            <li>うまく映らないページもあるので注意</li>
+          </ul>
+        </section>
+
+        <section data-background="http://petfun.jp/wp-content/uploads/2014/11/18.gif">
+          <h3>ご清聴ありがとうございました</h3>
+        </section>
+
+        <section>
+          <h3><i class="fas fa-book" style="color:#990000"></i> 参考文献，参考サイト</h3>
+          <hr />
+          <ul>
+            <li><a href="https://revealjs.com/backgrounds/" target="_blanc">Reveal.js: Slide Backgrounds</a></li>
+            <li><a href="http://www.tohoho-web.com/www.htm" target="_blanc">とほほのHTML入門</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <section>
+            <br /><br />
+            <h2>文字の大きさ</h2>
+            <hr />
+            <h2><i class="fas fa-flip-vertical" style="color:#554433">文字の大きさ</i></h2>
+          </section>
+
+          <section>
+            <span style="font-size: 800%">で</span>
+          </section>
+
+          <section>
+            <span style="font-size: 800%">か</span>
+          </section>
+
+          <section>
+            <span style="font-size: 800%">い</span>
+          </section>
+
+          <section>
+            <span style="font-size: 800%">ぞ</span>
+          </section>
+
+          <section>
+            <span style="font-size: 30%">ちっさいぞ</span>
+          </section>
+
+          <section>
+            <h3>&lt;span&gt;または&lt;div&gt;タグを使う</h3>
+            <hr />
+            <ul>
+              <li><code>&lt;span <span style="color: #33ccff">style="font-size: 800%"</span>&gt;でかいぞ&lt;/span&gt;</code></li>
+              <li><code>&lt;span <span style="color: #ffcc33">style="font-size: 30%"</span>&gt;ちっさいぞ&lt;/span&gt;</code></li>
+            </ul>
+          </section>
+
+          <section>
+            <p class="r-fit-text">大きさの自動調整自動調整自動調整自動調整自動調整自動調整自動調整自動調整自動調整</p>
+            <p class="r-fit-text">勝手に改行されない（限度はある）</p>
+            <hr />
+            <p>属性&lt;p <span style="color: #ff6633">class="r-fit-text"</span>&gt;&lt;/p&gt;を使っている</p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <br /><br />
+            <h2>幻影と残像</h2>
+            <hr />
+            <h2><i class="fas fa-flip-vertical" style="color:#775577">幻影と残像</i></h2>
+          </section>
+
+          <section>
+            はじける！はじける！<br />
+            <i class="fas fa-5x fa-heart faa-burst animated" style="color:#ff0000"></i>
+          </section>
+
+          <section>
+            <i class="fas fa-cog fa-spin animated" style="color:#999933"></i> まわる，まわる！
+          </section>
+
+          <section>
+            <p>はい，次どうぞ</p>
+            <p><i class="fas fa-arrow-down fa-2x faa-pulse animated" style="color:#009999"></i></p>
+          </section>
+
+          <section>
+            とりあえず，跳ねとくわ<br />
+            <i class="fas fa-3x fa-music faa-bounce animated" style="color:#ff99ff"></i>
+          </section>
+
+          <section>
+            <i class="fas fa-pencil-alt" style="color:#999900"></i> 参考：<a href="https://saruwakakun.com/html-css/basic/font-awesome">【保存版】Font Awesomeの使い方：Webアイコンフォントを使おう</a>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <br /><br />
+            <h2 class="animate__animated animate__rubberBand animate__infinite">文字にアニメーション</h2>
+            <hr />
+            <h2 class="animate__animated animate__rubberBand animate__infinite"><i class="fas fa-flip-vertical" style="color:#775577">文字にアニメーション</i></h2>
+          </section>
+
+          <section>
+            <i class="fas fa-pencil-alt" style="color:#999900"></i> 参考：<a href="https://animate.style">Animate.css</a>
+          </section>
+        </section>
+
+        <section data-background="http://petfun.jp/wp-content/uploads/2014/11/18.gif">
+          <h3>ご清聴ありがとうございました</h3>
+        </section>
+
+        <section>
+          <h3><i class="fas fa-book" style="color:#009900"></i> 参考文献，参考サイト</h3>
+          <hr />
+          <ul>
+            <li><a href="http://www.tohoho-web.com/www.htm">とほほのHTML入門</a></li>
+            <li><a href="https://www.webcreatorbox.com/tech/css-gradient">webクリエイターボックス</a></li>
+            <li><a href="https://saruwakakun.com/html-css/basic/font-awesome">【保存版】Font Awesomeの使い方：Webアイコンフォントを使おう</a></li>
+            <li><a href="https://github.com/hakimel/reveal.js/">Reveal.js</a></li>
+            <li><a href="https://animate.style">Animate.css</a></li>
+          </ul>
+
+        </section>
+
+        <section>
+          <h3>おまけ：数式の表示</h3>
+          <hr />
+          <!-- \[\begin{aligned} \dot{x} &amp; = \sigma(y-x) \\ \dot{y} &amp; = \rho x - y -
+               xz \\ \dot{z} &amp; = -\beta z + xy \end{aligned} \] -->
+          <div style="font-size: 60%" class="animate__fadeIn">
+            \[
+            \frac{\pi}{2} =
+            \left( \int_{0}^{\infty} \frac{\sin x}{\sqrt{x}} dx \right)^2 =
+            \sum_{k=0}^{\infty} \frac{(2k)!}{2^{2k}(k!)^2} \frac{1}{2k+1} =
+            \prod_{k=1}^{\infty} \frac{4k^2}{4k^2 - 1}
+            \]
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/search/search.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/math/math.js"></script>
+    <!-- Appearance plugin -->
+    <script src="plugin/appearance/appearance.js"></script>
+    <!-- Custom controls plugin -->
+    <script src="plugin/customcontrols/plugin.js"></script>
+    <link rel="stylesheet" href="plugin/customcontrols/style.css">
+    <!-- Chalkboard plugin -->
+    <script src="plugin/chalkboard/plugin.js"></script>
+    <link rel="stylesheet" href="plugin/chalkboard/style.css">
+    <!-- <script src="plugin/menu/menu.js"></script> -->
+    <!-- <link href="plugin/menu/menu.css" rel="stylesheet"> -->
+    <script>
+
+     // Also available as an ES module, see:
+     // https://revealjs.com/initialization/
+     Reveal.initialize({
+       controls: true,
+       progress: true,
+       center: true,
+       hash: true,
+       transition: 'convex',
+       // Learn about plugins: https://revealjs.com/plugins/
+       //Appearance Plugin
+       appearance: {
+         debug: true,
+         appearparents: true,
+         hideagain: true,
+         appearevent: 'auto',
+         autoappear: true,
+         autoelements: {'ul li, ol li': 'animate__fadeInLeft', 'h1, table, iframe': 'animate__zoomIn', 'h2, h3': 'animate__fadeInUp', 'p': 'animate__fadeIn', 'img': 'animate__fadeInDown'},
+         compatibility: false
+       },
+       //Chalkboard Plugin
+       customcontrols: {
+         controls: [
+           { icon: '<i class="fa fa-pen-square"></i>',
+             title: 'Toggle chalkboard (B)',
+             action: 'RevealChalkboard.toggleChalkboard();'
+           },
+           { icon: '<i class="fa fa-pen"></i>',
+             title: 'Toggle notes canvas (C)',
+             action: 'RevealChalkboard.toggleNotesCanvas();'
+           }
+         ]
+       },
+       chalkboard: {
+         storage: document.title,
+         /* src: getPath() + "chalkboard/playback/chalkboard.json", */
+         theme: "blackboard"
+         // theme: "whiteboard"
+       },
+       plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMath.KaTeX, Appearance, RevealChalkboard, RevealCustomControls ]
+     });
+    </script>
+  </body>
+</html>
