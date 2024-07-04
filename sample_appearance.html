@@ -592,11 +592,11 @@
     <!-- Appearance plugin -->
     <script src="plugin/appearance/appearance.js"></script>
     <!-- Custom controls plugin -->
-    <script src="plugin/customcontrols/plugin.js"></script>
-    <link rel="stylesheet" href="plugin/customcontrols/style.css">
+    <!-- <script src="plugin/customcontrols/plugin.js"></script>
+    <link rel="stylesheet" href="plugin/customcontrols/style.css"> -->
     <!-- Chalkboard plugin -->
-    <script src="plugin/chalkboard/plugin.js"></script>
-    <link rel="stylesheet" href="plugin/chalkboard/style.css">
+    <!-- <script src="plugin/chalkboard/plugin.js"></script>
+    <link rel="stylesheet" href="plugin/chalkboard/style.css"> -->
     <!-- <script src="plugin/menu/menu.js"></script> -->
     <!-- <link href="plugin/menu/menu.css" rel="stylesheet"> -->
     <script>
@@ -620,26 +620,7 @@
          autoelements: {'ul li, ol li': 'animate__fadeInLeft', 'h1, table, iframe': 'animate__zoomIn', 'h2, h3': 'animate__fadeInUp', 'p': 'animate__fadeIn', 'img': 'animate__fadeInDown'},
          compatibility: false
        },
-       //Chalkboard Plugin
-       customcontrols: {
-         controls: [
-           { icon: '<i class="fa fa-pen-square"></i>',
-             title: 'Toggle chalkboard (B)',
-             action: 'RevealChalkboard.toggleChalkboard();'
-           },
-           { icon: '<i class="fa fa-pen"></i>',
-             title: 'Toggle notes canvas (C)',
-             action: 'RevealChalkboard.toggleNotesCanvas();'
-           }
-         ]
-       },
-       chalkboard: {
-         storage: document.title,
-         /* src: getPath() + "chalkboard/playback/chalkboard.json", */
-         theme: "blackboard"
-         // theme: "whiteboard"
-       },
-       plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMath.KaTeX, Appearance, RevealChalkboard, RevealCustomControls ]
+       plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMath.KaTeX, Appearance ]
      });
     </script>
   </body>
